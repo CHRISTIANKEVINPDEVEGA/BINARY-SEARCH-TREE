@@ -53,6 +53,8 @@ class BinarySearchNode:
         if self.right:
             elements += self.right.post_order_traversal()
 
+        elements.append(self.data)
+
         return elements
 
     def search(self,val):
