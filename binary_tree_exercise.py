@@ -55,6 +55,8 @@ class BinarySearchNode:
         return self.left.find_min()
 
     def find_max(self):
+        if self.right is None:
+            return self.data
 
 
 def build_tree(elements):
