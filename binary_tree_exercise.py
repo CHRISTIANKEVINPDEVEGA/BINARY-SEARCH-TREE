@@ -33,6 +33,8 @@ class BinarySearchNode:
 
         return elements
 
+    def pre_order_traversal(self):
+
     def search(self,val):
         if self.data == val:
             return True
