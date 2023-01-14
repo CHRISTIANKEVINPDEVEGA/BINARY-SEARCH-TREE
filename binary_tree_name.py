@@ -74,6 +74,11 @@ class BinaryNodeSearch:
             return self.DATA
         return self.left.find_max()
 
+    def find_min(self):
+        if self.right is None:
+            return self.DATA
+        return self.left.find_min()
+
 
 
         
