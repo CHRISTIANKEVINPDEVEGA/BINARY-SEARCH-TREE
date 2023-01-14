@@ -47,7 +47,15 @@ class BinaryNodeSearch:
             if self.right:
                 return self.right.search_scan(item)
             else:
-                return False             
+                return False 
+
+    def deleter(self,item):
+        if item < self.DATA:
+            if self.left:
+                self.left = self.left.deleter(item)
+        elif item > self.DATA:
+            if self.right:
+                self.right = self.right.deleter(item)            
 
         
 
