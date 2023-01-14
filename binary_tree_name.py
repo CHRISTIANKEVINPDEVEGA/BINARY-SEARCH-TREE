@@ -18,4 +18,13 @@ class BinaryNodeSearch:
             if self.right:
                 self.right.plus_child(DATA)
             else:
-                self.right = BinaryNodeSearch(DATA)     
+                self.right = BinaryNodeSearch(DATA)
+
+    def IN_order_traversal(self):
+        elements = []
+
+        if self.left:
+            elements += self.left.IN_order_traversal()
+
+
+        return elements
