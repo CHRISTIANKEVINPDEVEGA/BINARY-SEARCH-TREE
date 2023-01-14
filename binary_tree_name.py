@@ -78,6 +78,10 @@ class BinaryNodeSearch:
         if self.right is None:
             return self.DATA
         return self.left.find_min()
+    
+def tree_builder(elements):
+    root = BinaryNodeSearch(elements[0])
+    return root
 
 
 
