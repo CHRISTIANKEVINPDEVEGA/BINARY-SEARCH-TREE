@@ -13,3 +13,9 @@ class BinaryNodeSearch:
                 self.left.plus_child(DATA)
             else:
                 self.left = BinaryNodeSearch(DATA)
+
+        else:
+            if self.right:
+                self.right.plus_child(DATA)
+            else:
+                self.right = BinaryNodeSearch(DATA)     
