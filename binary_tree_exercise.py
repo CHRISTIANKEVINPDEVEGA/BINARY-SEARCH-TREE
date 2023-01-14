@@ -38,6 +38,9 @@ class BinarySearchNode:
 
         elements.append(self.data)
 
+        if self.left:
+            elements += self.left.pre_order_traversal()
+
         return elements
 
 
