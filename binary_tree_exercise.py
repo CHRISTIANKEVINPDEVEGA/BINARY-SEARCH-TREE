@@ -49,8 +49,10 @@ class BinarySearchNode:
             else:
                 return False
 
-    def find_min():
-        
+    def find_min(self):
+        if self.left is None:
+            return self.left
+
 
 def build_tree(elements):
     root = BinarySearchNode(elements[0])
