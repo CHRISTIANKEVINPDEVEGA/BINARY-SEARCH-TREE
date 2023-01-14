@@ -26,5 +26,10 @@ class BinaryNodeSearch:
         if self.left:
             elements += self.left.IN_order_traversal()
 
+        elements.append(self.DATA)
+
+        
+        
+
 
         return elements
