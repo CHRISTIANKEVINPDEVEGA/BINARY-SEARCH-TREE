@@ -10,6 +10,6 @@ class BinarySearchNode:
 
         if data < self.data:
             if self.left:
-                pass
+                self.left.add_child(data)
             else:
                 self.left = BinarySearchNode(data)
