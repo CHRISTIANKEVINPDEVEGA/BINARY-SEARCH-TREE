@@ -70,12 +70,12 @@ class BinaryNodeSearch:
         return self
 
     def find_max(self):
-        if self.left is None:
+        if self.right is None:
             return self.DATA
-        return self.left.find_max()
+        return self.right.find_max()
 
     def find_min(self):
-        if self.right is None:
+        if self.left is None:
             return self.DATA
         return self.left.find_min()
     
@@ -92,6 +92,8 @@ if __name__ == '__main__':
 
     print("In Order Traversal: ",nl_tree.IN_order_traversal())
     print("Search: ",nl_tree.search_scan("R"))
+    print("Minimum value: ",nl_tree.find_min())
+    print("Maximum value: ",nl_tree.find_max())
 
 
 
