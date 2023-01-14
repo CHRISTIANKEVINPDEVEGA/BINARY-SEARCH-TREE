@@ -37,13 +37,13 @@ class BinaryNodeSearch:
         if self.DATA == item:
             return True
 
-        if self.DATA < item:
+        if item < self.DATA:
             if self.left:
                 return self.left.search_scan(item)
             else:
                 return False
 
-        if self.DATA > item:
+        if item > self.DATA :
             if self.right:
                 return self.right.search_scan(item)
             else:
@@ -91,6 +91,7 @@ if __name__ == '__main__':
     nl_tree = tree_builder(name_letter)
 
     print("In Order Traversal: ",nl_tree.IN_order_traversal())
+    print("Search: ",nl_tree.search_scan("R"))
 
 
 
