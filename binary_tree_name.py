@@ -86,6 +86,10 @@ def tree_builder(elements):
         root.plus_child(elements[iter])
     return root
 
+if __name__ == '__main__':
+    name_letter = ["C","H","R","I","S","T","I","A","N","K","E","V","I","N","P","E","L","I","P","A","D","A","D","E","V","E","G","A"]
+    nl_tree = tree_builder(name_letter)
+
 
 
         
