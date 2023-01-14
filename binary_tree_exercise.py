@@ -90,6 +90,8 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = [17,4,1,20,9,23,18,34,18,4]
     number_tree = build_tree(numbers)
+    print("This is in order traversal", number_tree.in_order_traversal())
     print("The smallest number in list? ",number_tree.find_min())
     print("The largest number in list? ",number_tree.find_max())
     print("The sum of all number in list? ",number_tree.calculate_sum())
+    print("This is pre order traversal", number_tree.pre_order_traversal())
