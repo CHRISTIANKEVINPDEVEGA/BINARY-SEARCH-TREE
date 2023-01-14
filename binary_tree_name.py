@@ -117,6 +117,7 @@ if __name__ == '__main__':
     nl_tree = tree_builder(name_letter)
 
     print("In Order Traversal: ",nl_tree.IN_order_traversal())
+    print("Pre Order Traversal: ",nl_tree.PRE_order_traversal())
     print("Search: ",nl_tree.search_scan("R"))
     print("Minimum value: ",nl_tree.find_min())
     print("Maximum value: ",nl_tree.find_max())
