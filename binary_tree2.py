@@ -49,6 +49,9 @@ class BinarySearchNode:
             else:
                 return False
 
+    def delete(self,val):
+
+
     def find_min(self):
         if self.left is None:
             return self.data
