@@ -81,6 +81,9 @@ class BinaryNodeSearch:
     
 def tree_builder(elements):
     root = BinaryNodeSearch(elements[0])
+
+    for iter in range(1,len(elements)):
+        root.plus_child(elements[iter])
     return root
 
 
