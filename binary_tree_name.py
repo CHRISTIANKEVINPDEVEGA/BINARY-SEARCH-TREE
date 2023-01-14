@@ -28,6 +28,8 @@ class BinaryNodeSearch:
 
         elements.append(self.DATA)
 
+        if self.right:
+            elements += self.right.IN_order_traversal()
         
         
 
