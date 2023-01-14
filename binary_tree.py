@@ -9,3 +9,5 @@ class BinarySearchNode:
             return
 
         if data < self.data:
+            if self.left:
+                pass
