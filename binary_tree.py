@@ -36,13 +36,14 @@ class BinarySearchNode:
     def search(self,val):
         if self.data == val:
             return True
+
         if val < self.data:
             if self.left:
-                self.left.search(val)
+                return self.left.search(val)
             else:
                 return False
 
-        if val < self.data:
+        if val > self.data:
             if self.right:
                 return self.right.search(val)
             else:
@@ -58,7 +59,8 @@ def build_tree(elements):
     return root
 
 if __name__ ==  '__main__':
-    numbers = [17,4,1,20,9,23,18,34]
-    numbers_tree = build_tree(numbers)
-    print(numbers_tree.in_order_traversal())
-    print(numbers_tree.search(2))
+    countries = ["India","Pakistan","Germany","USA","China","India","UK","USA"]
+    country_tree = build_tree(countries)
+    print(country_tree.in_order_traversal())
+    print("is UK in the list?",country_tree.search("UK"))
+    print("is Sweden in the list?",country_tree.search("Sweden"))
