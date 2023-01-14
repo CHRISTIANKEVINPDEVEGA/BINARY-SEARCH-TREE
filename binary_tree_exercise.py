@@ -60,16 +60,9 @@ class BinarySearchNode:
         return self.right.find_max()
 
     def calculate_sum(self):
-        if self.left:
-            left_sum = self.left.calculate_sum()
-        else:
-            0
-        
-        if self.right:
-            right_sum = self.right.calculate_sum()
-        else:
-            0
-        
+        left_sum = self.left.calculate_sum() if self.left else 0
+        right_sum = self.right.calculate_sum() if self.right else 0
+        return self.data + left_sum + right_sum
         
 
 
@@ -86,3 +79,4 @@ if __name__ == '__main__':
     number_tree = build_tree(numbers)
     print("The smallest number in list? ",number_tree.find_min())
     print("The largest number in list? ",number_tree.find_max())
+    print("The sum of all number in list? ",number_tree.calculate_sum())
