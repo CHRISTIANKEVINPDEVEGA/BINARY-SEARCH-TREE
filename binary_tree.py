@@ -22,6 +22,9 @@ class BinarySearchNode:
 
     def in_order_traversal(self):
         elements = []
+
+        if self.left:
+            elements += self.right.in_order_traversal()
         return elements
 
             
