@@ -36,4 +36,8 @@ class BinarySearchNode:
 def build_tree(elements):
     root = BinarySearchNode(elements[0])
 
+    for i in range(1,len(elements)):
+        root.add_child(elements[i])
+
+    return
             
