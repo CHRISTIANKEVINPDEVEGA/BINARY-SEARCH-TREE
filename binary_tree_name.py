@@ -69,6 +69,12 @@ class BinaryNodeSearch:
             self.left = self.left.delete(max_item_val)
         return self
 
+    def find_max(self):
+        if self.left is None:
+            return self.DATA
+        return self.left.find_max()
+
+
 
         
 
