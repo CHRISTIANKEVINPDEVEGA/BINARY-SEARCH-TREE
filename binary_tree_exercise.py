@@ -104,3 +104,4 @@ if __name__ == '__main__':
     print("The largest number in list? ",number_tree.find_max())
     print("The sum of all number in list? ",number_tree.calculate_sum())
     print("This is pre order traversal", number_tree.pre_order_traversal())
+    print("This is post order traversal", number_tree.post_order_traversal())
