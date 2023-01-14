@@ -33,7 +33,9 @@ class BinaryNodeSearch:
 
         return elements
 
-    def search_scan(self,val):
+    def search_scan(self,item):
+        if self.DATA == item:
+            return            
 
         
 
