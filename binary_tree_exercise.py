@@ -57,6 +57,7 @@ class BinarySearchNode:
     def find_max(self):
         if self.right is None:
             return self.data
+        return self.right.find_max()
 
 
 def build_tree(elements):
@@ -71,3 +72,4 @@ if __name__ == '__main__':
     numbers = [17,4,1,20,9,23,18,34,18,4]
     number_tree = build_tree(numbers)
     print("The smallest number in list? ",number_tree.find_min())
+    print("The largest number in list? ",number_tree.find_max())
