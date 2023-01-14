@@ -2,4 +2,8 @@ class BinaryNodeSearch:
     def __init__(self,DATA):
         self.DATA = DATA
         self.left = None
-        self.right = None   
+        self.right = None
+
+    def plus_child(self, DATA):
+        if DATA == self.DATA:
+            return
