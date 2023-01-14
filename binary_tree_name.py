@@ -119,7 +119,8 @@ if __name__ == '__main__':
     print("In Order Traversal: ",nl_tree.IN_order_traversal())
     print("Pre Order Traversal: ",nl_tree.PRE_order_traversal())
     print("Post Order Traversal: ",nl_tree.POST_order_traversal())
-    print("Search: ",nl_tree.search_scan("R"))
+    print("Does R exist in my name: ",nl_tree.search_scan("R"))
+    print("Does B exist in my name: ",nl_tree.search_scan("B"))
     print("Minimum value: ",nl_tree.find_min())
     print("Maximum value: ",nl_tree.find_max())
     
