@@ -35,7 +35,12 @@ class BinaryNodeSearch:
 
     def search_scan(self,item):
         if self.DATA == item:
-            return            
+            return True
+
+        if self.DATA < item:
+            return self.left.search_scan(item)
+        else:
+            return False             
 
         
 
