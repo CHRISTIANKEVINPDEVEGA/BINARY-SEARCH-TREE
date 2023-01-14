@@ -34,11 +34,18 @@ class BinaryNodeSearch:
 
     def PRE_order_traversal(self):
         elements = []
-        
+        elements.append(self.DATA)
+        if self.left:
+            elements += self.left.PRE_order_traversal()
+        if self.right:
+            elements += self.right.PRE_order_traversal()        
+
         return elements
 
     def POST_order_traversal(self):
         elements = []
+
+
 
         return elements
 
