@@ -55,7 +55,14 @@ class BinaryNodeSearch:
                 self.left = self.left.deleter(item)
         elif item > self.DATA:
             if self.right:
-                self.right = self.right.deleter(item)            
+                self.right = self.right.deleter(item)
+        else:
+            if self.left is None and self.right is None:
+                return None
+            elif self.left is None:
+                return self.right
+            elif self.right is None:
+                return self.left
 
         
 
