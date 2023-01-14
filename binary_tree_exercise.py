@@ -60,6 +60,17 @@ class BinarySearchNode:
         return self.right.find_max()
 
     def calculate_sum(self):
+        if self.left:
+            left_sum = self.left.calculate_sum()
+        else:
+            0
+        
+        if self.right:
+            right_sum = self.right.calculate_sum()
+        else:
+            0
+        
+        
 
 
 def build_tree(elements):
