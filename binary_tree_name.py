@@ -92,7 +92,7 @@ class BinaryNodeSearch:
 
             max_item_val = self.left.find_max()
             self.DATA = max_item_val
-            self.left = self.left.delete(max_item_val)
+            self.left = self.left.deleter(max_item_val)
         return self
 
     def find_max(self):
@@ -122,6 +122,12 @@ if __name__ == '__main__':
     print("Search: ",nl_tree.search_scan("R"))
     print("Minimum value: ",nl_tree.find_min())
     print("Maximum value: ",nl_tree.find_max())
+    
+    
+    name_letter = ["C","H","R","I","S","T","I","A","N","K","E","V","I","N","P","E","L","I","P","A","D","A","D","E","V","E","G","A"]
+    nl_tree = tree_builder(name_letter)
+    nl_tree.deleter("C")
+    print("Deleted: ",nl_tree.IN_order_traversal())
 
 
 
