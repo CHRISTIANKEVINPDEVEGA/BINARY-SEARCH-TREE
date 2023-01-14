@@ -34,9 +34,13 @@ class BinaryNodeSearch:
 
     def PRE_order_traversal(self):
         elements = []
+        
         return elements
 
     def POST_order_traversal(self):
+        elements = []
+
+        return elements
 
 
     def search_scan(self,item):
