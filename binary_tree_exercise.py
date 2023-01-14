@@ -59,6 +59,8 @@ class BinarySearchNode:
             return self.data
         return self.right.find_max()
 
+    def calculate_sum(self):
+
 
 def build_tree(elements):
     root = BinarySearchNode(elements[0])
