@@ -13,3 +13,10 @@ class BinarySearchNode:
                 self.left.add_child(data)
             else:
                 self.left = BinarySearchNode(data)
+        
+        else:
+            if self.right:
+                self.right.add_child(data)
+            else:
+                self.right = BinarySearchNode(data)
+            
