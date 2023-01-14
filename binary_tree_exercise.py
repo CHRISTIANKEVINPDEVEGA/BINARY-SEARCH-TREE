@@ -49,6 +49,8 @@ class BinarySearchNode:
             else:
                 return False
 
+    def find_min():
+        
 
 def build_tree(elements):
     root = BinarySearchNode(elements[0])
@@ -61,4 +63,3 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = [17,4,1,20,9,23,18,34,18,4]
     number_tree = build_tree(numbers)
-    
