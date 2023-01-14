@@ -50,6 +50,9 @@ class BinarySearchNode:
                 return False
 
     def delete(self,val):
+        if val < self.data:
+            if self.left:
+                self.left = self.left.delete(val)
 
 
     def find_min(self):
