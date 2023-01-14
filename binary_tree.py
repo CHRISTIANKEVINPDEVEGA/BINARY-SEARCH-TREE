@@ -3,3 +3,5 @@ class BinarySearchNode:
         self.data=data
         self.left=None
         self.right=None
+    
+    def add_child(self,data):
