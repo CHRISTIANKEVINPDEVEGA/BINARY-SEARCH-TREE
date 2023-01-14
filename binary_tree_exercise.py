@@ -46,6 +46,8 @@ class BinarySearchNode:
         return elements
 
     def post_order_elements(self):
+        elements=[]
+        return elements
 
     def search(self,val):
         if self.data == val:
