@@ -63,4 +63,4 @@ if __name__ ==  '__main__':
     country_tree = build_tree(countries)
     print(country_tree.in_order_traversal())
     print("is UK in the list?",country_tree.search("UK"))
-    print("is Sweden in the list?",country_tree.search("Sweden"))
+    print("is in the list?",country_tree.search("Sweden"))
