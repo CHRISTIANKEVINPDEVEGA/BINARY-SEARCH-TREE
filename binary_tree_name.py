@@ -38,9 +38,12 @@ class BinaryNodeSearch:
             return True
 
         if self.DATA < item:
-            return self.left.search_scan(item)
-        else:
-            return False             
+            if self.left:
+                return self.left.search_scan(item)
+            else:
+                return False
+
+        if self.DATA > item:             
 
         
 
