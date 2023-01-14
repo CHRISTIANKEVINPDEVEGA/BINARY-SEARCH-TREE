@@ -64,7 +64,7 @@ class BinarySearchNode:
             elif self.right is None:
                 return self.left
 
-            max_val = self.left.find_min()
+            max_val = self.left.find_max()
             self.data = max_val
             self.left = self.left.delete(max_val)
         return self
