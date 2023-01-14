@@ -30,8 +30,14 @@ class BinaryNodeSearch:
 
         if self.right:
             elements += self.right.IN_order_traversal()
-
         return elements
+
+    def PRE_order_traversal(self):
+        elements = []
+        return elements
+
+    def POST_order_traversal(self):
+
 
     def search_scan(self,item):
         if self.DATA == item:
