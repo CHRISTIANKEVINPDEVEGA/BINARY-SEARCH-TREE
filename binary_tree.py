@@ -43,6 +43,12 @@ class BinarySearchNode:
             else:
                 return False
 
+        if val < self.data:
+            if self.right:
+                self.right.search(val)
+            else:
+                return False
+
 
 def build_tree(elements):
     root = BinarySearchNode(elements[0])
