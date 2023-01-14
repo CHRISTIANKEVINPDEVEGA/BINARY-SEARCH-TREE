@@ -11,3 +11,5 @@ class BinarySearchNode:
         if data < self.data:
             if self.left:
                 pass
+            else:
+                self.left = BinarySearchNode(data)
