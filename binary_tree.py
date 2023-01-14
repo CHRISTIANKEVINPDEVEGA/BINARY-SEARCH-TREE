@@ -33,6 +33,9 @@ class BinarySearchNode:
 
         return elements
 
+    def search(self,val):
+        
+
 def build_tree(elements):
     root = BinarySearchNode(elements[0])
 
