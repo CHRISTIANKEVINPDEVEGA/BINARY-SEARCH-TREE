@@ -64,6 +64,8 @@ class BinarySearchNode:
             elif self.right is None:
                 return self.left
 
+            min_val = self.right.find_min()
+
     def find_min(self):
         if self.left is None:
             return self.data
