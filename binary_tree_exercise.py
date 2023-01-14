@@ -45,8 +45,13 @@ class BinarySearchNode:
 
         return elements
 
-    def post_order_elements(self):
+    def post_order_traversal(self):
         elements=[]
+
+        if self.left:
+            elements += self.left.post_order_traversal()
+
+
         return elements
 
     def search(self,val):
